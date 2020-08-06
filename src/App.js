@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { ServiceApp } from './components/service';
 
 function App() {
   return (
@@ -22,5 +23,13 @@ function App() {
     </div>
   );
 }
+
+let actionary = { ServiceApp };
+
+let btn = document.getElementById("btn");
+btn.addEventListener('click', () => {
+  ServiceApp(): void
+});
+
 
 export default App;
